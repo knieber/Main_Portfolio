@@ -1,0 +1,209 @@
+
+/***************************************
+HEADER - INDEX PAGE
+***************************************/
+
+.home-header {
+  background: url("../img/HeaderBG.jpg") no-repeat center;
+  background-size: cover;
+  height: 650px;
+}
+
+.contact-button {
+  padding-top: 115px;
+  margin: auto;
+}
+
+.contact-button button {
+  height: 65px;
+  width: 225px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6fcdaf;
+  background: rgba(255,255,255,.0);
+  border: 5px solid #6fcdaf;
+  transition-duration: .3s;
+}
+
+.contact-button button:hover {
+  background: #6fcdaf;
+  color: #fff;
+}
+
+.contact-button button:focus {
+  outline: 0;
+}
+
+
+
+/***************************************
+SECTION 1 - PORTFOLIO
+***************************************/
+
+#portfolio {
+  height: 250px;
+  margin: auto;
+  width: 85%;
+  padding-bottom: 20px;
+}
+
+#portfolio h3 {
+  margin: 20px;
+}
+
+.icon-block {
+  margin-top: 15px;
+  width: 27%;
+  float: left;
+  display: inline;
+}
+
+.icon-block p {
+  margin-top: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.icon-block:nth-of-type(1n+2) {
+  margin-left: 9.5%;
+}
+
+.icon {
+  width: 140px;
+  height: 100px;
+  padding-bottom: 5px;
+	-webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+ }
+
+.icon:hover {
+	transform: scale(1.10);
+}
+
+.video {
+  padding: 20px 0 15px 0;
+  height: 70px;
+}
+
+/***************************************
+SECTION 2 - ABOUT ME
+***************************************/
+
+#about-me {
+  height: 550px;
+  margin: auto;
+  width: 100%;
+  background: url("../img/Coffeeshop.jpg") no-repeat center;
+  background-size: cover;
+  color: #d9d9d9;
+}
+
+.about-me-overlay {
+  background: rgba(112,207,174,.4);
+  height: 100%;
+  padding-top: 30px;
+}
+
+
+#about-me h3 {
+  color: #fff;
+  margin: 0 0 15px 0;
+}
+
+.profile-icon {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+#about-me p {
+  margin: auto;
+  max-width: 60%;
+  padding-top: 25px;
+}
+
+#about-me p::first-line {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  padding: 0 5px;
+  -webkit-duration: .3s;
+	-moz-duration: .3s;
+	-o-duration: .3s;
+	transition-duration: .3s;
+ }
+
+ .social-media img:hover {
+	transform: scale(1.15);
+}
+
+@media (max-width: 710px) {
+
+  /***************************************
+  SECTION 1 - PORTFOLIO (MEDIA QUERY)
+  ***************************************/
+
+  #portfolio {
+    height: 700px;
+  }
+
+  .icon-block {
+    padding-top: 20px;
+    width: 100%;
+    clear: both;
+    display: block;
+  }
+
+  .icon-block p {
+    width: 60%;
+    margin: 20px auto 30px auto;
+  }
+
+  .icon-block:nth-of-type(1n+2) {
+    margin-left: 0;
+  }
+
+  /***************************************
+  SECTION 2 - ABOUT ME (MEDIA QUERY)
+  ***************************************/
+
+  #about-me {
+    height: 600px;
+  }
+}
+
+@media (max-width: 550px){
+
+  /***************************************
+  SECTION 2 - ABOUT ME (MEDIA QUERY)
+  ***************************************/
+
+  #about-me {
+    height: 640px;
+  }
+
+}
+
+
+
+
+/***************************************
+PALETTE
+
+-2B4E72 - Water Ends
+-2790B0 - Water Begins
+-94BA65 - Grass Always Regrows
+-353432 - Losing Hope
+-4E4D4A - Dark Days
+
+***************************************/

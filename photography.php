@@ -1,0 +1,201 @@
+<!DOCTYPE Html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kyle Nieber - Developer, Photographer, Videographer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/photography.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+    <body>
+      <header class="main-header photography-header">
+        <div class="headbg-overlay">
+
+<!-- Full Nav -->
+          <div id="fullNav" class="nav">
+            <nav>
+              <div>
+              <p><a href="index.php">{axiom}</a>
+              </p>
+              </div>
+              <div class="mainnav-right">
+                <ul>
+                  <a href="development.php"><li>WEB DEVELOPMENT</li></a>
+                  <a class="selected" href="photography.php"><li>PHOTOGRAPHY</li></a>
+                  <a href="videos.php"><li>VIDEOS</li></a>
+                </ul>
+                <div class="farnav-right">
+                  <ul>
+                    <a href="#" class="contact"><li>CONTACT</li></a>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+
+<!-- Media Query Mobile Nav -->
+          <div id="mobileNav" class="nav">
+            <nav>
+              <div class="topNavButton">
+              <p>{axiom}
+                <img class ="menuLines" src="img/MenuLines.svg">
+              </p>
+              </div>
+              <div class="mainnav-right mobileListMenu">
+                <ul>
+                  <a href="index.php"><li>HOME</li></a>
+                  <a href="development.php"><li>WEB DEVELOPMENT</li></a>
+                  <a class="selected" href="photography.php"><li>PHOTOGRAPHY</li></a>
+                  <a href="videos.php"><li>VIDEOS</li></a>
+                  <a href="#" class="contact"><li>CONTACT</li></a>
+                </ul>
+                <div class="farnav-right">
+                  <ul>
+                    <a href="#" class="contact"><li>CONTACT</li></a>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+
+
+
+  <!-- Photography Title -->
+
+          <div class="header-wrapper">
+
+            <div class="title">
+                <h1>photography</h1>
+                <h2>city &middot; nature &middot; everyday life</h2>
+            </div>
+
+          </div>
+  <!-- End Home Title -->
+        </div>
+      </header>
+
+<!-- Section 1 - Introduction Begin -->
+      <div class="photoIntroduction">
+        <h3>My Portfolio</h1>
+        <p>Below are a few of my favorite photos I've taken so far.
+          Photography is definitely more of a hobby than a career, however
+          I'm always up for discussing photo shoots of events, couples, and
+          everyday life.</p>
+        <div class="arrowDown">
+          <p>Check It Out Below</p>
+          <img src="img/arrowDown.svg">
+        </div>
+      </div>
+
+<!-- Section 1 - Introduction End -->
+
+
+<!-- Section 2 - Photo Gallery Begin -->
+
+      <div class="photoWrapper">
+
+        <!-- Gallery Photo's should have max height of 1000px and max width of 700px and put into photoGallery/JPEG -->
+        <!-- All Photo's need to be wrapped with an "a" element with an href to the original for full res lightbox. Put originals in photoGallery/JPEG/Originals-->
+
+        <a href="photoGallery/JPEG/Originals/image1.jpg"><img src="photoGallery/JPEG/image1.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image2.jpg"><img src="photoGallery/JPEG/image2.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image3.jpg"><img src="photoGallery/JPEG/image3.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image4.jpg"><img src="photoGallery/JPEG/image4.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image5.jpg"><img src="photoGallery/JPEG/image5.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image6.jpg"><img src="photoGallery/JPEG/image6.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image7.jpg"><img src="photoGallery/JPEG/image7.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image8.jpg"><img src="photoGallery/JPEG/image8.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image9.jpg"><img src="photoGallery/JPEG/image9.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image10.jpg"><img src="photoGallery/JPEG/image10.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image11.jpg"><img src="photoGallery/JPEG/image11.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image12.jpg"><img src="photoGallery/JPEG/image12.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image13.jpg"><img src="photoGallery/JPEG/image13.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image14.jpg"><img src="photoGallery/JPEG/image14.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image15.jpg"><img src="photoGallery/JPEG/image15.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image16.jpg"><img src="photoGallery/JPEG/image16.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image17.jpg"><img src="photoGallery/JPEG/image17.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image18.jpg"><img src="photoGallery/JPEG/image18.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image19.jpg"><img src="photoGallery/JPEG/image19.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image20.jpg"><img src="photoGallery/JPEG/image20.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image21.jpg"><img src="photoGallery/JPEG/image21.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image22.jpg"><img src="photoGallery/JPEG/image22.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image23.jpg"><img src="photoGallery/JPEG/image23.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image24.jpg"><img src="photoGallery/JPEG/image24.jpg"></a>
+        <a href="photoGallery/JPEG/Originals/image25.jpg"><img src="photoGallery/JPEG/image25.jpg"></a>
+
+      </div>
+
+
+
+      <!-- Push Div to keep footer below content -->
+      <div class="push"></div>
+
+<!-- Section 2 - Photos End -->
+
+      <footer class="main-footer">
+        <div class="copyright-footer">
+          <p>&#169;<?php echo date('Y'); ?> Kyle Nieber</p>
+        </div>
+        <div class="social-media-footer-container">
+            <div class="social-media-icon">
+              <a href="http://www.facebook.com/kyle.nieber"><img src="img/facebook-icon.png"></a>
+            </div>
+            <div class="social-media-icon">
+              <a href="http://www.twitter.com/KyleNieber"><img src="img/twitter-icon.png"></a>
+            </div>
+            <div class="social-media-icon">
+              <a href="http://www.vimeo.com/kylenieber"><img src="img/vimeo-icon.png"></a>
+            </div>
+        </div>
+      </footer>
+
+      <!-- Contact Form -->
+          <div class="contact-form">
+
+            <form action="/my-handling-form-page" method="post">
+
+              <div class="form-wrapper">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" />
+                </div>
+                <div>
+                  <label for="mail">E-mail</label>
+                  <input type="email" id="mail" />
+                </div>
+                <div>
+                  <label for="mail">Confirm Email</label>
+                  <input type="email" id="mail" />
+                </div>
+                <div>
+                  <label for="msg">Message</label>
+                  <textarea id="msg"></textarea>
+                </div>
+              </div>
+
+              <div class="button">
+                <button type="submit">Send your message</button>
+              </div>
+
+            </form>
+
+          </div>
+
+          <div class="xButton">
+              <img src="img/formViewerX.svg">
+          </div>
+
+      <!-- JavaScript Call -->
+          <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+          <script src="js/form.js"></script>
+          <script src="js/shuffle.js"></script>
+          <script src="js/mobileNav.js"></script>
+        <script src="js/lightbox.js"></script>
+
+        </body>
+
+    </html>

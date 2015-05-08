@@ -1,0 +1,22 @@
+/***************************************
+HEADER - VIDEOS PAGE
+***************************************/
+
+.videos-header {
+  background: url("../img/videos-header.jpg") no-repeat center;
+  background-size: cover;
+  height: 575px;
+}
+
+
+
+/***************************************
+PALETTE
+
+-2B4E72 - Water Ends
+-2790B0 - Water Begins
+-94BA65 - Grass Always Regrows
+-353432 - Losing Hope
+-4E4D4A - Dark Days
+
+***************************************/
