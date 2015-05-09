@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Kyle Nieber - Developer, Photographer, Videographer";
+$pageTitle = "Web Development";
 $pageCSS = "css/development-css.css";
 $pageHeader = "development-header";
 $section = "development";

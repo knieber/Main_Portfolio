@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Kyle Nieber - Developer, Photographer, Videographer";
+$pageTitle = "Photography";
 $pageCSS = "css/photography.css";
 $pageHeader = "photography-header";
 $section = "photography";
@@ -24,7 +24,7 @@ include('inc/header.php') ?>
 
 <!-- Section 1 - Introduction Begin -->
       <div class="photoIntroduction">
-        <h3>My Portfolio</h1>
+        <h3>My Photos</h3>
         <p>Below are a few of my favorite photos I've taken so far.
           Photography is definitely more of a hobby than a career, however
           I'm always up for discussing photo shoots of events, couples, and

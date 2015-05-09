@@ -8,15 +8,56 @@ HEADER - VIDEOS PAGE
   height: 575px;
 }
 
+/***************************************
+Introduction - VIDEOS PAGE
+***************************************/
+
+.Introduction {
+    height: 280px;
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    border-bottom: 2px solid #4c4c4c;
+}
+
+.Introduction h3 {
+    margin: 0;
+}
+
+.Introduction p {
+    width: 70%;
+    max-width: 750px;
+    margin: 25px auto 60px auto;
+    font-size: 1rem;
+}
 
 
 /***************************************
-PALETTE
-
--2B4E72 - Water Ends
--2790B0 - Water Begins
--94BA65 - Grass Always Regrows
--353432 - Losing Hope
--4E4D4A - Dark Days
-
+Videos - VIDEOS PAGE
 ***************************************/
+
+.wrapper {
+    width: 85%;
+    margin: 70px auto 20px auto;
+    line-height: 50px;
+}
+
+.wrapper iframe {
+    margin: 10px;
+}
+
+/***************************************
+MEDIA QUERIES - VIDEOS PAGE
+***************************************/
+
+@media (max-width: 600px) {
+
+    .Introduction {
+        padding-bottom: 50px;
+    }
+
+    .wrapper iframe {
+        width: 100%;
+    }
+
+}

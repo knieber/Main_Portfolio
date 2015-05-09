@@ -5,7 +5,7 @@
         <div class="form-wrapper">
             <div>
                 <label for="name">Name</label>
-                <input type="text" id="name" />
+                <input type="text" name="name" id="name" />
             </div>
             <div>
                 <label for="mail">E-mail</label>
