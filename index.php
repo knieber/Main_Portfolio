@@ -15,7 +15,7 @@
       <header class="main-header home-header">
         <div class="headbg-overlay">
 
-<!-- Full Nav -->
+        <!-- Full Nav -->
           <div id="fullNav" class="nav">
             <nav>
               <div>
@@ -38,7 +38,7 @@
           </div>
 
 
-<!-- Media Query Mobile Nav -->
+        <!-- Media Query Mobile Nav -->
           <div id="mobileNav" class="nav">
             <nav>
               <div class="topNavButton">
@@ -66,7 +66,7 @@
 
 
 
-  <!-- Home Title -->
+    <!-- Home Title -->
 
           <div class="header-wrapper">
 
@@ -76,9 +76,9 @@
             </div>
 
           </div>
-  <!-- End Home Title -->
+     <!-- End Home Title -->
 
-  <!-- Contact ME button -->
+    <!-- Contact ME button -->
           <div class="contact-button">
               <button name="contact-button">CONTACT ME</button>
             </div>
@@ -88,9 +88,9 @@
 
 
 
-<!-- Home Page -->
+    <!-- Home Page -->
 
-<!-- First Section - PORTFOLIO -->
+    <!-- First Section - PORTFOLIO -->
       <div id="portfolio">
         <h3>What I Do</h3>
 
@@ -112,9 +112,9 @@
           </p>
         </div>
       </div>
-<!-- End First Section -->
+    <!-- End First Section -->
 
-<!-- Second Section - ABOUT ME -->
+    <!-- Second Section - ABOUT ME -->
       <div id="about-me">
         <div class="about-me-overlay">
           <h3>Who I Am</h3>
@@ -134,74 +134,22 @@
           </div>
         </div>
       </div>
-<!-- End Second Section -->
+    <!-- End Second Section -->
 
-<!-- End Home Page -->
+    <!-- End Home Page -->
 
     <!-- Push Div to keep footer below content -->
     <div class="push"></div>
 
-    <footer class="main-footer">
-      <div class="copyright-footer">
-        <p>&#169;<?php echo date('Y'); ?> Kyle Nieber</p>
-      </div>
-      <div class="social-media-footer-container">
-          <div class="social-media-icon">
-            <a href="http://www.facebook.com/kyle.nieber"><img src="img/facebookIcon.svg"></a>
-          </div>
-          <div class="social-media-icon">
-            <a href="http://www.twitter.com/KyleNieber"><img src="img/twitterIcon.svg"></a>
-          </div>
-          <div class="social-media-icon">
-            <a href="http://www.vimeo.com/kylenieber"><img src="img/vimeoIcon.svg"></a>
-          </div>
-          <div class="social-media-icon">
-            <a href="http://github.com/knieber"><img src="img/githubIcon.svg"></a>
-          </div>
-      </div>
-    </footer>
 
 
+   <!-- Footer Include -->
+   <?php include('inc/footer.php'); ?>
 
+    <!-- Contact Form -->
+    <?php include('inc/contactForm.php') ?>
 
-
-<!-- Contact Form -->
-    <div class="contact-form">
-
-      <form action="/my-handling-form-page" method="post">
-
-        <div class="form-wrapper">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" />
-          </div>
-          <div>
-            <label for="mail">E-mail</label>
-            <input type="email" id="mail" />
-          </div>
-          <div>
-            <label for="mail">Confirm Email</label>
-            <input type="email" id="mail" />
-          </div>
-          <div>
-            <label for="msg">Message</label>
-            <textarea id="msg"></textarea>
-          </div>
-        </div>
-
-        <div class="button">
-          <button type="submit">Send your message</button>
-        </div>
-
-      </form>
-
-    </div>
-
-    <div class="xButton">
-        <img src="img/formViewerX.svg">
-    </div>
-
-<!-- JavaScript Call -->
+    <!-- JavaScript Call -->
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/form.js"></script>
     <script src="js/mobileNav.js"></script>
