@@ -1,65 +1,9 @@
-<!DOCTYPE Html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Kyle Nieber - Developer, Photographer, Videographer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/videos-css.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-
-    <body>
-      <header class="main-header videos-header">
-        <div class="headbg-overlay">
-
-<!-- Full Nav -->
-          <div id="fullNav" class="nav">
-            <nav>
-              <div>
-              <p><a href="index.php">{axiom}</a>
-              </p>
-              </div>
-              <div class="mainnav-right">
-                <ul>
-                  <a href="development.php"><li>WEB DEVELOPMENT</li></a>
-                  <a href="photography.php"><li>PHOTOGRAPHY</li></a>
-                  <a class="selected" href="videos.php"><li>VIDEOS</li></a>
-                </ul>
-                <div class="farnav-right">
-                  <ul>
-                    <a href="#" class="contact"><li>CONTACT</li></a>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-
-
-<!-- Media Query Mobile Nav -->
-          <div id="mobileNav" class="nav">
-            <nav>
-              <div class="topNavButton">
-              <p>{axiom}
-                <img class ="menuLines" src="img/MenuLines.svg">
-              </p>
-              </div>
-              <div class="mainnav-right mobileListMenu">
-                <ul>
-                  <a href="index.php"><li>HOME</li></a>
-                  <a href="development.php"><li>WEB DEVELOPMENT</li></a>
-                  <a href="photography.php"><li>PHOTOGRAPHY</li></a>
-                  <a class="selected" href="videos.php"><li>VIDEOS</li></a>
-                  <a href="#" class="contact"><li>CONTACT</li></a>
-                </ul>
-                <div class="farnav-right">
-                  <ul>
-                    <a href="#" class="contact"><li>CONTACT</li></a>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
+<?php
+$pageTitle = "Kyle Nieber - Developer, Photographer, Videographer";
+$pageCSS = "css/videos-css.css";
+$pageHeader = "videos-header";
+$section = "videos";
+include('inc/header.php') ?>
 
 
 
