@@ -45,15 +45,13 @@ include('inc/header.php') ?>
         <!-- Gallery Photo's should have max height of 1000px and max width of 700px and put into photoGallery/JPEG -->
         <!-- All Photo's need to be wrapped with an "a" element with an href to the original for full res lightbox. Put originals in photoGallery/JPEG/Originals-->
 
-
-          <!-- This php will replace the above HTML once I figure out how to include originals -->
+          <!-- This PHP will generate the HTML to create the photo gallery -->
           <?php
 
           $galleryImages = glob("photoGallery/JPEG/*.jpg");
           foreach($galleryImages as $galleryImage) {
                 $parts = explode("/", $galleryImage);
-                $file = explode(".", $parts[2]);
-                $imagePath = $file[0].".".$file[1];
+                $imagePath = $parts[2];
             echo '<a href="photoGallery/JPEG/Originals/'.$imagePath.'"><img src="photoGallery/JPEG/'.$imagePath.'"></a>';
           }
 
