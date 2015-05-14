@@ -92,10 +92,8 @@ include('inc/header.php') ?>
     <?php include('inc/contactForm.php') ?>
 
     <!-- JavaScript Call -->
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/form.js"></script>
     <script src="js/mobileNav.js"></script>
 
     </body>
-
 </html>

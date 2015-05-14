@@ -43,3 +43,72 @@ $formX.click(function(){
     $form.hide();
   });
 });
+
+
+
+
+
+
+
+//Email Send
+$("#submit_btn").click(function() {
+
+    var proceed = true;
+    //simple validation at client's end
+    //loop through each field and we simply change border color to red for invalid fields
+    $("#contact_form input[required=true], #contact_form textarea[required=true]").each(function(){
+        $(this).css('border-color','');
+        if(!$.trim($(this).val())){ //if this field is empty
+            $(this).css('border-color','red'); //change border color to red
+            proceed = false; //set do not proceed flag
+        }
+        //check invalid email
+        var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        if( $(this).attr("type")=="email" && !email_reg.test($.trim($(this).val())) ){
+            $(this).css('border-color','red'); //change border color to red
+            proceed = false; //set do not proceed flag
+        }
+
+        //Checks to see if email == email confirmation field
+        if( $("#email").val() !== $("#confirmEmail").val() ) {
+            $("#email").css('border-color','red');
+            $("#confirmEmail").css('border-color','red');
+            proceed = false;
+        }
+
+    });
+
+
+
+    if(proceed) { //everything looks good! proceed...
+        //get input field values data to be sent to server
+        var post_data = {
+            'user_name'     : $('#name').val(),
+            'user_email'    : $('#email').val(),
+            'subject'       : $('#subject').val(),
+            'msg'           : $('#msg').val()
+        };
+        //Ajax post data to server
+        $.ajax({
+            url: "./contact_me.php",
+            type: "POST",
+            data: post_data,
+            dataType: "html",
+            success: function(result) {
+                if(result == 'success') {
+                    $form.fadeOut();
+                    $overlay.append('<div class="success"><p>Your email has been sent! I&#39;ll get back to you as soon as I can.</p></div>');
+                }else {
+                    $form.fadeOut();
+                    $overlay.append('<div class="error"><p>It looks like there was an issue with your email submission. Try again later.</p></div>');
+                }
+            }
+        });
+    }
+});
+
+//reset previously set border colors and hide all message on .keyup()
+$("#contact_form  input[required=true], #contact_form textarea[required=true]").keyup(function() {
+    $(this).css('border-color','');
+    $("#result").slideUp();
+});

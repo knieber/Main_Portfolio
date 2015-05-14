@@ -228,36 +228,37 @@ FOOTER
 CONTACT FORM
 ***************************************/
 
-.contact-form {
+div .contact-form {
   display: none;
-  margin-top: 200px;
+    position:relative;
+    top: 15%;
+    border: 5px solid #6fcdaf;
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    height: 590px;
+    z-index: 50;
+    background: #fff;
 }
 
-form {
-  border: 5px solid #6fcdaf;
-  width: 500px;
-  max-width: 90%;
-  margin: auto;
-  height: 500px;
-  z-index: 50;
-  background: #fff;
-}
 
-form label {
+.contact-form label {
   display: block;
   margin-bottom: 5px;
   text-align: left;
 }
 
 input,
-textarea {
-  height: 20px;
+textarea,
+select{
+  height: 25px;
   width: 350px;
-  text-align: center;
+  text-align: left;
   background: #f5f5f5;
   border: 1px solid #e5e5e5;
   outline: 0;
 }
+
 
 input:focus {
   background: #fff;
@@ -328,6 +329,20 @@ textarea {
 .xButton img {
   height: 20px;
   width: 20px;
+}
+
+.success,
+.error{
+    z-index: 200;
+    color: #fff;
+    position: relative;
+    top: 30%;
+    font-size: 3rem;
+    max-width: 70%;
+    max-height: 200px;
+    margin: auto;
+    text-align: center;
+
 }
 
 /***************************************
@@ -440,6 +455,16 @@ MEDIA QUERIES
     float: none;
     margin: auto;
   }
+
+  /***************************************
+  CONTACT FORM
+  ***************************************/
+
+  .success,
+  .error{
+      font-size: 2rem;
+    }
+
 }
 
 
@@ -474,6 +499,11 @@ MEDIA QUERIES
   textarea {
     width: 250px;
   }
+
+    .success,
+    .error{
+        font-size: 1.3rem;
+    }
 
 
 }
