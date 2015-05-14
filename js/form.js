@@ -90,7 +90,7 @@ $("#submit_btn").click(function() {
         };
         //Ajax post data to server
         $.ajax({
-            url: "./contact_me.php",
+            url: "./inc/contactProcess.php",
             type: "POST",
             data: post_data,
             dataType: "html",
@@ -110,5 +110,4 @@ $("#submit_btn").click(function() {
 //reset previously set border colors and hide all message on .keyup()
 $("#contact_form  input[required=true], #contact_form textarea[required=true]").keyup(function() {
     $(this).css('border-color','');
-    $("#result").slideUp();
 });
