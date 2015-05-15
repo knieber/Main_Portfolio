@@ -23,8 +23,13 @@ $photoContainer.append($fullImg);
 $("body").append($overlayPhoto);
 
 //When picture is clicked
-   $(".photoWrapper a").click(function() {
-     event.preventDefault();
+   $(".photoWrapper a").click(function(event) {
+
+       //Needed for MOZ/IE
+       event.stopPropagation();
+       //Needed for Chrome
+       event.preventDefault();
+
      $currentImage = $(this);
      var $imageLocation = $currentImage.attr("href");
 
@@ -54,7 +59,10 @@ $("body").append($overlayPhoto);
 
 
 //When "prevArrow" is clicked
-  $(".prevArrow").click(function(){
+  $(".prevArrow").click(function(event){
+      //Needed for MOZ/IE
+      event.stopPropagation();
+      //Needed for Chrome
     event.preventDefault();
     $currentImage = $currentImage.prev();
     var $imageLocation = $currentImage.attr("href");
@@ -62,18 +70,22 @@ $("body").append($overlayPhoto);
     $(".nextArrow").fadeIn();
 
     if($currentImage.prev().length == 0){
-      $(this).fadeOut();
+      $(this).hide();
     }
 
     //Fade out current picture, append new source, fade in new img
-    $fullImg.fadeOut(function(){
-      $(this).attr('src', $imageLocation).fadeIn(800);
+    $fullImg.animate({ opacity: 0}, 0, function(){
+      $fullImg.attr('src', $imageLocation);
+        $fullImg.attr('src', $imageLocation).animate({ opacity: 1}, 0);
     });
 
   });
 
 //When "nextArrow" is clicked
-  $(".nextArrow").click(function(){
+  $(".nextArrow").click(function(event){
+      //Needed for MOZ/IE
+      event.stopPropagation();
+      //Needed for Chrome
     event.preventDefault();
     $currentImage = $currentImage.next();
     var $imageLocation = $currentImage.attr("href");
@@ -81,20 +93,24 @@ $("body").append($overlayPhoto);
     $(".prevArrow").fadeIn();
 
     if($currentImage.next().length == 0){
-      $(this).fadeOut();
+      $(this).hide();
     }
 
     //Fade out current picture, append new source, fade in new img
-    $fullImg.fadeOut(function(){
-      $(this).attr('src', $imageLocation).fadeIn();
-    });
+      $fullImg.animate({ opacity: 0}, 0, function(){
+          $fullImg.attr('src', $imageLocation);
+          $fullImg.attr('src', $imageLocation).animate({ opacity: 1}, 0);
+      });
 
 
   });
 
 
 //When X button is clicked
-  $(".xButtonPhoto").click(function(){
+  $(".xButtonPhoto").click(function(event){
+      //Needed for MOZ/IE
+      event.stopPropagation();
+    //Needed for Chrome
     event.preventDefault();
 
     //hide overlay

@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Kyle Nieber - Developer, Photographer, Videographer";
+$pageTitle = "axiom - Development, Photography, Videography";
 $pageCSS = "css/index-page.css";
 $pageHeader = "home-header";
 $section = "home";
@@ -14,7 +14,7 @@ include('inc/header.php') ?>
 
             <div class="title">
                 <h1>{axiom}</h1>
-                <h2>developer &middot; photographer &middot; videographer</h2>
+                <h2>development &middot; photography &middot; videography</h2>
             </div>
 
           </div>
