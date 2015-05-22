@@ -20,14 +20,14 @@
         <div id="fullNav" class="nav">
             <nav>
                 <div>
-                    <p><a href="index.php">{axiom}</a>
+                    <p><a href="home">{axiom}</a>
                     </p>
                 </div>
                 <div class="mainnav-right">
                     <ul>
-                        <a class="<?php if( $section == "development") { echo "selected"; } ?>" href="development.php"><li>WEB DEVELOPMENT</li></a>
-                        <a class="<?php if( $section == "photography") { echo "selected"; } ?>" href="photography.php"><li>PHOTOGRAPHY</li></a>
-                        <a class="<?php if( $section == "videos") { echo "selected"; } ?>" href="videos.php"><li>VIDEOS</li></a>
+                        <a class="<?php if( $section == "development") { echo "selected"; } ?>" href="development"><li>WEB DEVELOPMENT</li></a>
+                        <a class="<?php if( $section == "photography") { echo "selected"; } ?>" href="photography"><li>PHOTOGRAPHY</li></a>
+                        <a class="<?php if( $section == "videos") { echo "selected"; } ?>" href="videography"><li>VIDEOS</li></a>
                     </ul>
                     <div class="farnav-right">
                         <ul>

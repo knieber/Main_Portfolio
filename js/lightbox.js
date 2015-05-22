@@ -74,9 +74,9 @@ $("body").append($overlayPhoto);
     }
 
     //Fade out current picture, append new source, fade in new img
-    $fullImg.animate({ opacity: 0}, 0, function(){
+    $fullImg.animate({ opacity: 0}, 500, function(){
       $fullImg.attr('src', $imageLocation);
-        $fullImg.attr('src', $imageLocation).animate({ opacity: 1}, 0);
+        $fullImg.animate({ opacity: 1}, 500);
     });
 
   });
@@ -97,9 +97,9 @@ $("body").append($overlayPhoto);
     }
 
     //Fade out current picture, append new source, fade in new img
-      $fullImg.animate({ opacity: 0}, 0, function(){
+      $fullImg.animate({ opacity: 0}, 500, function(){
           $fullImg.attr('src', $imageLocation);
-          $fullImg.attr('src', $imageLocation).animate({ opacity: 1}, 0);
+          $fullImg.animate({ opacity: 1}, 500);
       });
 
 

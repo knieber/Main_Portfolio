@@ -1,2 +1,8 @@
 RewriteEngine On
-RewriteRule ^photography photography.php
+RewriteRule ^home$ index.php
+RewriteRule ^photography$ photography.php
+RewriteRule ^development$ development.php
+RewriteRule ^videography$ videos.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

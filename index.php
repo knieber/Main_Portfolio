@@ -37,19 +37,19 @@ include('inc/header.php') ?>
         <h3>What I Do</h3>
 
         <div class="icon-block">
-          <a href="development.php"><img class ="icon" src="img/Developer Icon.svg"></a>
+          <a href="development"><img class ="icon" src="img/Developer Icon.svg"></a>
           <p>Web Development
           </p>
         </div>
 
         <div class="icon-block">
-            <a href="photography.php"><img class ="icon" src="img/Photo Icon2.svg"></a>
+            <a href="photography"><img class ="icon" src="img/Photo Icon2.svg"></a>
           <p>Photography
           </p>
         </div>
 
         <div class="icon-block">
-          <a href="videos.php"><img class ="icon video" src="img/video2.svg"></a>
+          <a href="videography"><img class ="icon video" src="img/video2.svg"></a>
           <p>Videography
           </p>
         </div>
