@@ -1,4 +1,4 @@
-RewriteEngine Off
+RewriteEngine On
 RewriteRule ^home$ index.php
 RewriteRule ^photography$ photography.php
 RewriteRule ^development$ development.php
